@@ -1,0 +1,44 @@
+name: Publish festival presentation
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - name: Unpack allowlisted presentation
+        run: |
+          python3 - <<'PYTHON'
+          import json,zipfile
+          from pathlib import PurePosixPath
+          with zipfile.ZipFile('site.zip') as z:
+              for name in z.namelist():
+                  path=PurePosixPath(name)
+                  assert not path.is_absolute() and '..' not in path.parts
+                  assert name in {'index.html','favicon.svg','demo-summary.json','.nojekyll'} or (name.startswith('assets/') and path.suffix in {'.js','.css','.woff2','.png','.svg'})
+              summary=json.loads(z.read('demo-summary.json'))
+              assert len(z.read('demo-summary.json'))<80000
+              assert len(summary['partnerships']['candidates'])==3
+              assert len(summary['catalogue']['events'])<=4
+              assert len(summary['catalogue']['performances'])<=18
+              assert not summary['evidence']['relations'] and not summary['evidence']['event_summaries']
+              z.extractall('_site')
+          PYTHON
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

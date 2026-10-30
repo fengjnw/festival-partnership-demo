@@ -1,0 +1,27 @@
+{
+  "files": 7,
+  "bytes_uncompressed": 1469152,
+  "zip_bytes": 390482,
+  "summary_bytes": 20822,
+  "public_records": {
+    "chart_cohorts": 14,
+    "recommended_events": 3,
+    "selected_performances": 6
+  },
+  "checks": [
+    "exact release allowlist",
+    "no full source or aggregate snapshots",
+    "no original performance dataset",
+    "no individual customer/order fields",
+    "no source maps or local paths"
+  ],
+  "sha256": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "assets/index-BH3KBUN4.js": "3ef8a3fcfad55db31ffa587c3027fad888f99aa23ac0d13adfd45d210f691338",
+    "assets/index-CD4B77Gp.css": "acd9db0299a86a3bc8f3e6cd961940dcc581ce32b92832b7521f089898ee3975",
+    "assets/maplibre-gl-a6kQIpqZ.js": "33237ea996bb6ff7fd4fff39ed96f68813f10dcdbaaf4fc429d96094bbea0b0a",
+    "demo-summary.json": "40732c0a35134fe993e2cbf50d1354954c25ba8558d3919791fb9142ff14345d",
+    "favicon.svg": "08051c444ada48236f7547b7a5c8352f2fe0e73e32128fa4102e5cc1fd628532",
+    "index.html": "620ce3e8b8c1658f446d279766a23be85b123d1a626de0040a126210e12ae88b"
+  }
+}
