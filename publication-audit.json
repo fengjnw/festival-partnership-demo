@@ -1,7 +1,7 @@
 {
   "files": 7,
-  "bytes_uncompressed": 1479360,
-  "zip_bytes": 392202,
+  "bytes_uncompressed": 1479362,
+  "zip_bytes": 392200,
   "summary_bytes": 25572,
   "public_records": {
     "chart_cohorts": 15,
@@ -22,6 +22,6 @@
     "assets/maplibre-gl-BV4MBUDx.js": "26efe016f2a52d4bce95fc262f670ee56aba4979fcc6ac33f432a13ae5014f2a",
     "demo-summary.json": "bf7af034fe7ba8296915ce769137acb88c1022b9075988134f754f7ee0330beb",
     "favicon.svg": "08051c444ada48236f7547b7a5c8352f2fe0e73e32128fa4102e5cc1fd628532",
-    "index.html": "bfa3ba12d1645681f54826c3b342c9ff9865b0ce8e10c01adb21496355dba61e"
+    "index.html": "cf71f2139034ee88ad1f9f2c4d3b0890c552b63167f0889d21e0de58cfdb4985"
   }
 }
