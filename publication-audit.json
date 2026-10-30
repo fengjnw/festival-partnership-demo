@@ -1,12 +1,12 @@
 {
   "files": 7,
-  "bytes_uncompressed": 1469152,
-  "zip_bytes": 390482,
-  "summary_bytes": 20822,
+  "bytes_uncompressed": 1479166,
+  "zip_bytes": 392171,
+  "summary_bytes": 25572,
   "public_records": {
-    "chart_cohorts": 14,
-    "recommended_events": 3,
-    "selected_performances": 6
+    "chart_cohorts": 15,
+    "recommended_events": 6,
+    "selected_performances": 12
   },
   "checks": [
     "exact release allowlist",
@@ -17,11 +17,11 @@
   ],
   "sha256": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "assets/index-BH3KBUN4.js": "3ef8a3fcfad55db31ffa587c3027fad888f99aa23ac0d13adfd45d210f691338",
-    "assets/index-CD4B77Gp.css": "acd9db0299a86a3bc8f3e6cd961940dcc581ce32b92832b7521f089898ee3975",
-    "assets/maplibre-gl-a6kQIpqZ.js": "33237ea996bb6ff7fd4fff39ed96f68813f10dcdbaaf4fc429d96094bbea0b0a",
-    "demo-summary.json": "40732c0a35134fe993e2cbf50d1354954c25ba8558d3919791fb9142ff14345d",
+    "assets/index-DSDPIbjT.js": "21af6981556b1cd75c20a66604b77ca5680d4dd719c5929878148e0b9977241f",
+    "assets/index-jAe22iNK.css": "57de8fd2b606839dd1dccf3184366d557b21c5def6dd681bd16b32ef490a6c47",
+    "assets/maplibre-gl-BEzLnacJ.js": "a0983feab0bdf5794ca09738b8c0f3c3999c400df91c10bac6d3fac1a6c575df",
+    "demo-summary.json": "bf7af034fe7ba8296915ce769137acb88c1022b9075988134f754f7ee0330beb",
     "favicon.svg": "08051c444ada48236f7547b7a5c8352f2fe0e73e32128fa4102e5cc1fd628532",
-    "index.html": "620ce3e8b8c1658f446d279766a23be85b123d1a626de0040a126210e12ae88b"
+    "index.html": "43fdea9ad7bdfb2e437f3a4349761b43ca4bc3b7e1f2ced621baaf341f1e8a06"
   }
 }

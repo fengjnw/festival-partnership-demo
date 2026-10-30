@@ -31,9 +31,9 @@ jobs:
                   assert name in {'index.html','favicon.svg','demo-summary.json','.nojekyll'} or (name.startswith('assets/') and path.suffix in {'.js','.css','.woff2','.png','.svg'})
               summary=json.loads(z.read('demo-summary.json'))
               assert len(z.read('demo-summary.json'))<80000
-              assert len(summary['partnerships']['candidates'])==3
-              assert len(summary['catalogue']['events'])<=4
-              assert len(summary['catalogue']['performances'])<=18
+              assert len(summary['partnerships']['candidates'])==6
+              assert len(summary['catalogue']['events'])<=7
+              assert len(summary['catalogue']['performances'])<=36
               assert not summary['evidence']['relations'] and not summary['evidence']['event_summaries']
               z.extractall('_site')
           PYTHON
